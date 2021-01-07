@@ -1,7 +1,7 @@
 /* COMMON STYLES */
 
 .section {
-    padding: 70px 0px;
+    padding: 0px 0px;
 }
 
 .section_title h2{
@@ -21,10 +21,6 @@
 
 .boxies_area {
     margin-top: 40px;
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: center;
-    gap: 20px;
 }
 
 .box_item {
@@ -61,27 +57,21 @@
     transition: all 2s ease;
     font-family: 'Dancing Script', cursive;
 
+    min-width: 100%;
+
     min-height: 100%;
     background-color: #282C2F;
     color: #E9B370;
 
-    display: grid;
-    grid-template: minmax(50px, auto) 1fr minmax(50px, auto) / 1fr;
-    grid-template-areas: 
-        "header"
-        "main"
-        "footer";
+    display: flex;
+    flex-direction: column;
 }
 
 /* HEADER */
 
 .header {
-    height: 500px;
     background-image: url(../img/bg_image.jpg);
     background-size: cover;
-
-    grid-area: header;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -105,11 +95,9 @@
 }
 
 .header_nav_list {
-    display: grid;
-    grid-auto-flow: column;
-
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 20px;
 }
 
 .header_nav_list li{
@@ -126,6 +114,11 @@
 .header_nav_list li{
     border: 1px solid transparent;
     border-radius: 5px;
+    margin-right: 20px;
+}
+
+.header_nav_list li:last-of-type{
+    margin-right: 0px;
 }
 
 .header_nav_list li:first-of-type{
@@ -139,10 +132,6 @@
 }
 
 /* MAIN */
-
-.main {
-    grid-area: main;
-}
 
 /* MAIN / SKILLS */
 
@@ -171,22 +160,22 @@
 .footer {
     font-family: 'Roboto', sans-serif;
     padding: 30px;
-    grid-area: footer;
+    /* grid-area: footer;
     display: grid;
-    grid-template-columns: 1fr minmax(400px, auto) minmax(800px, auto) 1fr;
+    grid-template-columns: 1fr minmax(400px, auto) minmax(800px, auto) 1fr; */
 }
 
-.phone_mail {
+/* .phone_mail {
     grid-column: 2 / 3;
-}
+} */
 
 .mail {
     margin-top: 10px;
 }
 
-.socials {
+/* .socials {
     grid-column: 3 / 4;
-}
+} */
 
 .social {
     display: inline-block;
