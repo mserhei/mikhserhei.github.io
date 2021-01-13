@@ -21,13 +21,16 @@
 
 .boxies_area {
     margin-top: 40px;
+    text-align:center;
 }
 
 .box_item {
     display: inline-block;
+    vertical-align: middle;
     border: 1px solid #E9B370;
     border-radius: 5px;
     padding: 20px;
+    margin: 10px 10px 0px 0px;
     transition: all .4s ease;
 }
 
@@ -72,17 +75,17 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 30% 5% 10%;
+    padding: 20% 5% 1%;
 }
 
 .header_logo_p1{
-    font-size: 3rem;
+    font-size: 5rem;
     transition: all 3s ease-out;
     text-align: center;
 }
 
 .header_logo_p2{
-    font-size: 30px;
+    font-size: 2rem;
     transition: all 3s ease-out;
     text-align: center;
 }
@@ -94,7 +97,7 @@
 
 .header_nav_list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -158,29 +161,18 @@
 .footer {
     font-family: 'Roboto', sans-serif;
     padding: 30px;
-    /* grid-area: footer;
-    display: grid;
-    grid-template-columns: 1fr minmax(400px, auto) minmax(800px, auto) 1fr; */
 }
-
-/* .phone_mail {
-    grid-column: 2 / 3;
-} */
 
 .mail {
     margin-top: 10px;
 }
-
-/* .socials {
-    grid-column: 3 / 4;
-} */
 
 .social {
     display: inline-block;
     padding: 5px;
     border: 1px solid #E9B370;
     border-radius: 5px;
-    margin-right: 10px;
+    margin: 15px 10px 0px 0px;
     transition: all 0.5s ease;
 }
 
@@ -195,7 +187,6 @@
 .social i {
     color: #E9B370;
     font-size: 20px;
-
 }
 
 /* BUTTON TO TOP */
@@ -225,4 +216,19 @@
 
 .visible {
     opacity: 1;
+}
+
+@media (max-width: 910px) {
+    .header_nav_list {
+        flex-direction: column;
+    }
+
+    .header_logo_p1{
+        font-size: 3rem;
+    }
+    
+    .header_logo_p2{
+        font-size: 1rem;
+
+    }
 }
