@@ -62,3 +62,12 @@ toHobbies.addEventListener(`click`, () => {
     blockHobbies.scrollIntoView(top);
 })
 
+// BUTTON SHOW MENU
+
+const buttonShowMenu = document.querySelector('.show_menu');
+const headerNav = document.querySelector('.header_nav');
+buttonShowMenu.addEventListener('click', () => {
+    buttonShowMenu.style.display = 'none';
+    headerNav.style.display = 'block';
+})
+

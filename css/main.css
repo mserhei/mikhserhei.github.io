@@ -90,20 +90,28 @@
     text-align: center;
 }
 
+.button_show_menu {
+    display: block;
+}
+
+.show_menu {
+    padding: 10px 20px;
+    background-color: rgba(39,40,44,0.9);
+    border-radius: 8px;
+    border: 1px solid  #E9B370;
+    color: #E9B370;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
 .header_nav {
+    display: none;
     margin-top: 80px;
     padding: 10px 10px;
     background-color: rgba(39,40,44,0.9);
     border-radius: 8px;
     border: 1px solid  #E9B370;
-
-    
-}
-
-.header_nav_list {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center; */
 }
 
 .header_nav_list li{
