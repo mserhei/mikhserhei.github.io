@@ -96,13 +96,15 @@
 }
 
 .header_nav_list {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .header_nav_list li{
+    margin-top: 10px;
     padding: 3px 10px;
+    display: inline-block;
 }
 
 .header_nav_list li a{
