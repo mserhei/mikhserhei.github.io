@@ -239,12 +239,14 @@
         display: block;
     }
     .header_nav {
-        display: none;
-        margin-top: 70px;
-        padding: 10px 10px;
-        background-color: rgba(39,40,44,0.9);
         border-radius: 0px;
-
+        border-left: 0px solid  #E9B370;
+        border-right: 0px solid  #E9B370;
+    }
+    .button_show_menu {
+        margin-top: 40px;
+        display: block;
+        padding: 20px
     }
 }
 
@@ -260,5 +262,10 @@
     .header_logo_p2{
         font-size: 1.5rem;
 
+    }
+    .button_show_menu {
+        margin-top: 20px;
+        display: block;
+        padding: 20px
     }
 }
