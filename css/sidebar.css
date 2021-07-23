@@ -29,6 +29,13 @@
   background-image: url("../img/photo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .photo__wrapp {
+    margin-bottom: 15px;
+  }
 }
 
 .categs__nav {
@@ -42,6 +49,12 @@
 .categs__item {
   width: 100%;
   height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .categs__item {
+    height: 30px;
+  }
 }
 
 .categs__link {
@@ -84,6 +97,7 @@
 @media screen and (max-width: 768px) {
   .contacts {
     padding: 0px 10px;
+    margin-top: 20px;
   }
 }
 
@@ -92,6 +106,18 @@
   line-height: 1.5;
 }
 
+@media screen and (max-width: 768px) {
+  .contacts__item {
+    line-height: 1.2;
+  }
+}
+
 .contacts__item:not(:first-child) {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__item:not(:first-child) {
+    margin-top: 5px;
+  }
 }
