@@ -107,6 +107,12 @@
   }
 }
 
+@media screen and (max-height: 400px) {
+  .contacts {
+    margin-top: 30px;
+  }
+}
+
 .contacts__item {
   text-align: center;
   line-height: 1.5;
